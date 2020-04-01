@@ -1,0 +1,87 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#face1{
+	border: 1px solid;
+    height: 33vh;
+    width: 33vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+	position: absolute; 
+	background: white;
+	transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+}
+
+.square{
+	height: 10.7vh;
+    width: 10.7vh;
+    border: 1px solid;
+	
+}
+
+#face2{
+	border: 1px solid;
+    height: 33vh;
+    width: 33vh;
+	background:yellow;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+	transform: rotate(-45deg) skew(15deg, 15deg);
+	position:absolute;
+}
+
+#face3{
+	border: 1px solid;
+    height: 33vh;
+    width: 33vh;
+	background:green;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+	transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%) ;
+	position: absolute;
+	 
+}
+
+#cube-container{
+	position: absolute;
+	width: 50vh;
+	height: 50vh;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(210deg);
+}
+
+@keyframes rot{
+	from{
+		transform: rotateX(0deg);
+	}
+	to{
+		transform: rotateX(180deg);
+	}
+}
+
+@media (min-width: 376px ) and (max-width: 426px) {
+	.square{
+		height: 10.7vh;
+		width: 10.6vh;
+	}
+}
+
+@media (min-width: 426px ) and (max-width: 768px) {
+	.square{
+		height: 10.7vh;
+		width: 10.6vh;
+	}
+}
+
+
+
+
+
+
+
